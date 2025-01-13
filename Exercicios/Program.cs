@@ -22,6 +22,7 @@ class Program
         Exercicio1.TotalVendasPorCategoria(vendas);
         Exercicio1.Top3CategoriasMaisLucrativas(vendas);
         Exercicio1.ProdutosComMenosDe5Vendas(vendas);
+        //
         
         List<Funcionario> funcionarios = new List<Funcionario>
         {
@@ -35,5 +36,21 @@ class Program
         Exercicio2.getListWorkersExpiredVacation(funcionarios);
         Exercicio2.getListWorkersByRole(funcionarios);
         Exercicio2.getWorkersRecentWithLess10Days(funcionarios);
+        //
+        
+        List<Produto> produtos = new List<Produto>
+        {
+            new Produto { Id = 1, Nome = "Notebook", Categoria = "Eletrônicos", Quantidade = 10, ValorUnitario = 3000 },
+            new Produto { Id = 2, Nome = "Mouse", Categoria = "Eletrônicos", Quantidade = 50, ValorUnitario = 150 },
+            new Produto { Id = 3, Nome = "Camiseta", Categoria = "Vestuário", Quantidade = 100, ValorUnitario = 50 },
+            new Produto { Id = 4, Nome = "Tênis", Categoria = "Vestuário", Quantidade = 30, ValorUnitario = 200 },
+            new Produto { Id = 5, Nome = "Livro", Categoria = "Educação", Quantidade = 200, ValorUnitario = 30 },
+            new Produto { Id = 6, Nome = "Caneta", Categoria = "Educação", Quantidade = 500, ValorUnitario = 5 }
+        };
+        // Chamando as soluções do exercício 3
+        Exercicio3.GetMore50ItensOnStockOrderByTotalItens(produtos);
+        Exercicio3.GetMoreExpensiveProductOnEachCategory(produtos);
+        Exercicio3.GetTotalInStock(produtos);
+        //
     }
 }
