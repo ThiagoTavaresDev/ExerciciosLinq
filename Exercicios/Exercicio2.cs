@@ -22,6 +22,15 @@ public class Exercicio2
            Console.WriteLine($"Cargo : {x.Cargo} Media: {x.Media}");
        }
    }
-   
+
+   public static void getWorkersRecentWithLess10Days(List<Funcionario> funcionarios)
+   {
+       var funcionariosRecentesComMenos10Dias = funcionarios.OrderByDescending(x => x.DiasFeriasUsados).Where(x => x.DiasFeriasUsados < 10).Take(3).ToList();
+       
+       foreach (var x in funcionariosRecentesComMenos10Dias)
+       {
+           Console.WriteLine($"Funcionarios : {x.Nome}, Data de Admissao {x.DataAdmissao} ,Dias de Ferias Usados:{x.DiasFeriasUsados}");
+       }
+   }
     
 }

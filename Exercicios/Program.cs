@@ -31,9 +31,9 @@ class Program
             new Funcionario { Id = 4, Nome = "Ana", Cargo = "Desenvolvedor", DataAdmissao = new DateTime(2020, 10, 25), DiasFeriasUsados = 0 },
             new Funcionario { Id = 5, Nome = "Lucas", Cargo = "Gerente", DataAdmissao = new DateTime(2021, 6, 5), DiasFeriasUsados = 15 }
         };
-        
+        // Chamando as soluções do exercício 2
         Exercicio2.getListWorkersExpiredVacation(funcionarios);
         Exercicio2.getListWorkersByRole(funcionarios);
-        
+        Exercicio2.getWorkersRecentWithLess10Days(funcionarios);
     }
 }
